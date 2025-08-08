@@ -1,87 +1,116 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>EcoPav — Energia aos seus pés</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoPav - Energia aos seus pés</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <div class="logo">⚡</div>
-      <h1>EcoPav <span class="tagline">Energia aos seus pés</span></h1>
-      <nav class="top-nav">
-        <a href="#descricao">Descrição</a>
-        <a href="#planejamento">Planejamento</a>
-        <a href="#vendas">Vendas</a>
-        <a href="#divulgacao">Divulgação</a>
-        <a href="#reflexao">Reflexão</a>
-      </nav>
-    </div>
-  </header>
+    <header>
+        <h1>🌱 EcoPav - Energia aos seus pés</h1>
+        <nav>
+            <a href="#descricao">Descrição</a>
+            <a href="#como-funciona">Como Funciona</a>
+            <a href="#planejamento">Planejamento</a>
+            <a href="#simulacao">Simulação</a>
+            <a href="#beneficios">Benefícios</a>
+            <a href="#divulgacao">Divulgação</a>
+            <a href="#reflexao">Reflexão</a>
+        </nav>
+    </header>
 
-  <main class="container">
-    <section id="descricao" class="card">
-      <h2>1. Descrição do produto</h2>
-      <p><strong>EcoPav</strong> é um piso modular piezoelétrico que converte a pressão dos passos em energia elétrica. Instalação pensada para escolas, estações, praças e shoppings.</p>
-      <ul>
-        <li><strong>Diferencial:</strong> transforma fluxo de pessoas em eletricidade limpa.</li>
-        <li><strong>Benefício:</strong> redução no consumo da rede e geração local para iluminação e totens.</li>
-        <li><strong>Público-alvo:</strong> prefeituras, empresas, escolas e centros comerciais.</li>
-      </ul>
-    </section>
+    <main>
+        <!-- Descrição -->
+        <section id="descricao" class="fade-in">
+            <h2>1. Nome e Descrição do Produto</h2>
+            <p><strong>Nome:</strong> EcoPav</p>
+            <p><strong>Descrição:</strong> Piso modular piezoelétrico que converte a pressão dos passos em energia elétrica limpa e renovável.</p>
+            <p><strong>Diferencial:</strong> Transformar o simples ato de caminhar em produção de energia, ajudando o meio ambiente e reduzindo custos.</p>
+            <p><strong>Problema que resolve:</strong> Redução no consumo de energia elétrica da rede, aproveitando energia que antes era desperdiçada.</p>
+            <p><strong>Público-alvo:</strong> Prefeituras, empresas, escolas, shoppings, estações de transporte e parques.</p>
+        </section>
 
-    <section id="planejamento" class="card">
-      <h2>2. Planejamento financeiro inicial</h2>
-      <ul>
-        <li>Componentes e materiais: R$ 20.000</li>
-        <li>Desenvolvimento e montagem: R$ 15.000</li>
-        <li>Testes e certificações: R$ 5.000</li>
-        <li>Divulgação: R$ 3.000</li>
-        <li>Ferramentas e equipamentos: R$ 2.000</li>
-      </ul>
-      <p class="note">Investimento inicial estimado: <strong>R$ 45.000</strong></p>
-    </section>
+        <!-- Como funciona -->
+        <section id="como-funciona" class="fade-in">
+            <h2>2. Como Funciona</h2>
+            <p>O piso EcoPav utiliza a tecnologia <strong>piezoelétrica</strong>, que gera eletricidade a partir da pressão mecânica. Cada passo sobre o piso gera uma pequena carga elétrica que é armazenada em baterias ou utilizada imediatamente.</p>
+            <ul>
+                <li>Cada módulo mede 50x50cm</li>
+                <li>Resistente a intempéries e alto tráfego</li>
+                <li>Instalação simples e manutenção mínima</li>
+                <li>Possibilidade de monitorar a energia gerada em tempo real</li>
+            </ul>
+        </section>
 
-    <section id="vendas" class="card">
-      <h2>3. Simulação de vendas e lucros</h2>
-      <label>M² vendidos por mês:
-        <input id="meters" type="number" value="30">
-      </label>
-      <label>Preço por m² (R$):
-        <input id="price" type="number" value="2500">
-      </label>
-      <label>Custo por m² (R$):
-        <input id="cost" type="number" value="1500">
-      </label>
-      <label>Investimento inicial (R$):
-        <input id="initial" type="number" value="45000">
-      </label>
-      <button id="calcBtn">Calcular lucro</button>
-      <p id="resultado"></p>
-    </section>
+        <!-- Planejamento -->
+        <section id="planejamento" class="fade-in">
+            <h2>3. Planejamento Financeiro Inicial</h2>
+            <ul>
+                <li>Componentes e materiais: R$ 20.000</li>
+                <li>Desenvolvimento e montagem: R$ 15.000</li>
+                <li>Testes e certificações: R$ 5.000</li>
+                <li>Divulgação: R$ 3.000</li>
+                <li>Ferramentas e equipamentos: R$ 2.000</li>
+            </ul>
+            <p><strong>Investimento inicial estimado:</strong> R$ 45.000</p>
+        </section>
 
-    <section id="divulgacao" class="card">
-      <h2>4. Divulgação e identidade visual</h2>
-      <ul>
-        <li>Logotipo com pegadas e raio elétrico; cores: verde e cinza.</li>
-        <li>Vídeos demonstrativos do piso.</li>
-        <li>Postagens comparando economia de energia.</li>
-        <li>Demonstrações em eventos sustentáveis.</li>
-      </ul>
-    </section>
+        <!-- Simulação -->
+        <section id="simulacao" class="fade-in">
+            <h2>4. Simulação de Vendas e Lucros</h2>
+            <div class="calc-box">
+                <label>M² vendidos por mês:
+                    <input type="number" id="m2" value="30">
+                </label>
+                <label>Preço por m² (R$):
+                    <input type="number" id="preco" value="2500">
+                </label>
+                <label>Custo por m² (R$):
+                    <input type="number" id="custo" value="1500">
+                </label>
+                <button onclick="calcularLucro()">Calcular lucro</button>
+                <div id="resultado"></div>
+            </div>
+        </section>
 
-    <section id="reflexao" class="card">
-      <h2>5. Reflexão final</h2>
-      <p>O EcoPav aproveita energia desperdiçada e traz benefícios ambientais e econômicos. O desafio é conseguir parcerias e otimizar custos.</p>
-    </section>
-  </main>
+        <!-- Benefícios -->
+        <section id="beneficios" class="fade-in">
+            <h2>5. Benefícios</h2>
+            <ul>
+                <li>💡 Geração de energia limpa e renovável</li>
+                <li>💰 Redução de custos de energia elétrica</li>
+                <li>🌍 Contribuição para a sustentabilidade do planeta</li>
+                <li>📈 Valorização de espaços públicos e privados</li>
+                <li>🎯 Potencial de marketing verde</li>
+            </ul>
+        </section>
 
-  <footer class="site-footer">
-    <p>Feito por Equipe EcoPav</p>
-  </footer>
+        <!-- Divulgação -->
+        <section id="divulgacao" class="fade-in">
+            <h2>6. Divulgação e Identidade Visual</h2>
+            <ul>
+                <li>Logotipo moderno com pegadas e raio elétrico</li>
+                <li>Vídeos demonstrativos do piso funcionando</li>
+                <li>Postagens mostrando economia real</li>
+                <li>Demonstrações em feiras e eventos</li>
+            </ul>
+        </section>
 
-  <script src="script.js"></script>
+        <!-- Reflexão -->
+        <section id="reflexao" class="fade-in">
+            <h2>7. Reflexão Final</h2>
+            <p>O projeto EcoPav mostrou como é possível transformar passos em energia, unindo tecnologia e sustentabilidade. Aprendemos sobre planejamento, mercado e impacto ambiental. Sim, abriríamos este negócio na vida real!</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Feito pela Equipe EcoPav | 🌱 Energia aos seus pés</p>
+        <div class="social">
+            <a href="#">Instagram</a> | <a href="#">LinkedIn</a> | <a href="#">YouTube</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
-    </html>
+  </html>
