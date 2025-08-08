@@ -3,114 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EcoPav - Energia aos seus pés</title>
+    <title>EcoPav - Pisos que Geram Energia</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <header>
-        <h1>🌱 EcoPav - Energia aos seus pés</h1>
-        <nav>
-            <a href="#descricao">Descrição</a>
-            <a href="#como-funciona">Como Funciona</a>
-            <a href="#planejamento">Planejamento</a>
-            <a href="#simulacao">Simulação</a>
-            <a href="#beneficios">Benefícios</a>
-            <a href="#divulgacao">Divulgação</a>
-            <a href="#reflexao">Reflexão</a>
-        </nav>
+        <h1>EcoPav</h1>
+        <p>Pisos inteligentes que transformam passos em energia</p>
     </header>
 
-    <main>
-        <!-- Descrição -->
-        <section id="descricao" class="fade-in">
-            <h2>1. Nome e Descrição do Produto</h2>
-            <p><strong>Nome:</strong> EcoPav</p>
-            <p><strong>Descrição:</strong> Piso modular piezoelétrico que converte a pressão dos passos em energia elétrica limpa e renovável.</p>
-            <p><strong>Diferencial:</strong> Transformar o simples ato de caminhar em produção de energia, ajudando o meio ambiente e reduzindo custos.</p>
-            <p><strong>Problema que resolve:</strong> Redução no consumo de energia elétrica da rede, aproveitando energia que antes era desperdiçada.</p>
-            <p><strong>Público-alvo:</strong> Prefeituras, empresas, escolas, shoppings, estações de transporte e parques.</p>
-        </section>
+    <section class="intro">
+        <img src="imagens/piso1.jpg" alt="Piso gerador de energia">
+        <div>
+            <h2>O que é o EcoPav?</h2>
+            <p>O <strong>EcoPav</strong> é um piso inteligente que converte a energia dos passos das pessoas em eletricidade limpa e renovável. Ideal para shoppings, estádios, escolas, praças e qualquer lugar com grande fluxo de pessoas.</p>
+        </div>
+    </section>
 
-        <!-- Como funciona -->
-        <section id="como-funciona" class="fade-in">
-            <h2>2. Como Funciona</h2>
-            <p>O piso EcoPav utiliza a tecnologia <strong>piezoelétrica</strong>, que gera eletricidade a partir da pressão mecânica. Cada passo sobre o piso gera uma pequena carga elétrica que é armazenada em baterias ou utilizada imediatamente.</p>
-            <ul>
-                <li>Cada módulo mede 50x50cm</li>
-                <li>Resistente a intempéries e alto tráfego</li>
-                <li>Instalação simples e manutenção mínima</li>
-                <li>Possibilidade de monitorar a energia gerada em tempo real</li>
-            </ul>
-        </section>
+    <section class="como-funciona">
+        <h2>Como Funciona</h2>
+        <p>Ao pisar sobre o EcoPav, a pressão mecânica é convertida em energia elétrica através de um sistema piezoelétrico de alta eficiência. Essa energia pode ser usada para iluminação, carregamento de dispositivos e muito mais.</p>
+        <img src="imagens/piso2.jpg" alt="Demonstração do piso">
+    </section>
 
-        <!-- Planejamento -->
-        <section id="planejamento" class="fade-in">
-            <h2>3. Planejamento Financeiro Inicial</h2>
-            <ul>
-                <li>Componentes e materiais: R$ 20.000</li>
-                <li>Desenvolvimento e montagem: R$ 15.000</li>
-                <li>Testes e certificações: R$ 5.000</li>
-                <li>Divulgação: R$ 3.000</li>
-                <li>Ferramentas e equipamentos: R$ 2.000</li>
-            </ul>
-            <p><strong>Investimento inicial estimado:</strong> R$ 45.000</p>
-        </section>
+    <section class="aplicacoes">
+        <h2>Aplicações</h2>
+        <ul>
+            <li>Shoppings e centros comerciais</li>
+            <li>Áreas públicas e praças</li>
+            <li>Escolas e universidades</li>
+            <li>Eventos e shows</li>
+            <li>Transporte público</li>
+        </ul>
+        <img src="imagens/piso3.jpg" alt="Piso instalado em shopping">
+    </section>
 
-        <!-- Simulação -->
-        <section id="simulacao" class="fade-in">
-            <h2>4. Simulação de Vendas e Lucros</h2>
-            <div class="calc-box">
-                <label>M² vendidos por mês:
-                    <input type="number" id="m2" value="30">
-                </label>
-                <label>Preço por m² (R$):
-                    <input type="number" id="preco" value="2500">
-                </label>
-                <label>Custo por m² (R$):
-                    <input type="number" id="custo" value="1500">
-                </label>
-                <button onclick="calcularLucro()">Calcular lucro</button>
-                <div id="resultado"></div>
-            </div>
-        </section>
+    <section class="vantagens">
+        <h2>Vantagens</h2>
+        <ul>
+            <li>Energia limpa e renovável</li>
+            <li>Design moderno e resistente</li>
+            <li>Fácil instalação</li>
+            <li>Baixa manutenção</li>
+            <li>Inovação que atrai atenção</li>
+        </ul>
+    </section>
 
-        <!-- Benefícios -->
-        <section id="beneficios" class="fade-in">
-            <h2>5. Benefícios</h2>
-            <ul>
-                <li>💡 Geração de energia limpa e renovável</li>
-                <li>💰 Redução de custos de energia elétrica</li>
-                <li>🌍 Contribuição para a sustentabilidade do planeta</li>
-                <li>📈 Valorização de espaços públicos e privados</li>
-                <li>🎯 Potencial de marketing verde</li>
-            </ul>
-        </section>
+    <section class="depoimentos">
+        <h2>O que dizem nossos clientes</h2>
+        <blockquote>"O EcoPav reduziu nossa conta de energia em 20% e chamou atenção dos clientes." – Shopping Cidade Verde</blockquote>
+        <blockquote>"Instalamos na escola e os alunos adoram ver a energia sendo gerada com seus passos!" – Colégio Futuro</blockquote>
+    </section>
 
-        <!-- Divulgação -->
-        <section id="divulgacao" class="fade-in">
-            <h2>6. Divulgação e Identidade Visual</h2>
-            <ul>
-                <li>Logotipo moderno com pegadas e raio elétrico</li>
-                <li>Vídeos demonstrativos do piso funcionando</li>
-                <li>Postagens mostrando economia real</li>
-                <li>Demonstrações em feiras e eventos</li>
-            </ul>
-        </section>
-
-        <!-- Reflexão -->
-        <section id="reflexao" class="fade-in">
-            <h2>7. Reflexão Final</h2>
-            <p>O projeto EcoPav mostrou como é possível transformar passos em energia, unindo tecnologia e sustentabilidade. Aprendemos sobre planejamento, mercado e impacto ambiental. Sim, abriríamos este negócio na vida real!</p>
-        </section>
-    </main>
+    <section class="contato">
+        <h2>Fale Conosco</h2>
+        <p>Quer saber mais ou pedir um orçamento? Clique no botão abaixo!</p>
+        <button id="botaoContato">Entrar em Contato</button>
+    </section>
 
     <footer>
-        <p>Feito pela Equipe EcoPav | 🌱 Energia aos seus pés</p>
-        <div class="social">
-            <a href="#">Instagram</a> | <a href="#">LinkedIn</a> | <a href="#">YouTube</a>
-        </div>
+        <p>EcoPav &copy; 2025 - Todos os direitos reservados</p>
     </footer>
 
     <script src="script.js"></script>
 </body>
-  </html>
+</html>
