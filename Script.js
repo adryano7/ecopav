@@ -1,16 +1,31 @@
-document.getElementById('calcBtn').addEventListener('click', () => {
-  const m = parseFloat(document.getElementById('meters').value);
-  const p = parseFloat(document.getElementById('price').value);
-  const c = parseFloat(document.getElementById('cost').value);
-  const i = parseFloat(document.getElementById('initial').value);
+// Cálculo de lucro
+function calcularLucro() {
+    const m2 = parseFloat(document.getElementById("m2").value);
+    const preco = parseFloat(document.getElementById("preco").value);
+    const custo = parseFloat(document.getElementById("custo").value);
 
-  const lucroPorM2 = p - c;
-  const lucroMensal = m * lucroPorM2;
-  const retorno = (i / lucroMensal).toFixed(1);
+    if (isNaN(m2) || isNaN(preco) || isNaN(custo)) {
+        document.getElementById("resultado").innerHTML = "⚠️ Preencha todos os campos corretamente.";
+        return;
+    }
 
-  document.getElementById('resultado').innerHTML = `
-    Lucro por m²: R$ ${lucroPorM2.toLocaleString()}<br>
-    Lucro mensal: R$ ${lucroMensal.toLocaleString()}<br>
-    Retorno do investimento: ${retorno} meses
-  `;
+    const lucroPorUnidade = preco - custo;
+    const lucroMensal = lucroPorUnidade * m2;
+    const investimentoInicial = 45000;
+    const mesesParaRetorno = investimentoInicial / lucroMensal;
+
+    document.getElementById("resultado").innerHTML =
+        `💰 Lucro mensal estimado: <strong>R$ ${lucroMensal.toFixed(2)}</strong><br>` +
+        `⏳ Retorno do investimento em aproximadamente <strong>${mesesParaRetorno.toFixed(1)}</strong> meses.`;
+}
+
+// Animação de fade-in ao rolar a página
+const faders = document.querySelectorAll('.fade-in');
+window.addEventListener('scroll', () => {
+    faders.forEach(fader => {
+        const rect = fader.getBoundingClientRect();
+        if (rect.top < window.innerHeight - 100) {
+            fader.classList.add('show');
+        }
+    });
 });
