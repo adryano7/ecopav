@@ -1,0 +1,50 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #0b0b0b;
+  color: #fff;
+  margin: 0;
+}
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
+.site-header {
+  background: #111;
+  padding: 15px;
+  position: sticky;
+  top: 0;
+}
+.top-nav a {
+  color: #aaa;
+  margin: 0 10px;
+  text-decoration: none;
+}
+.top-nav a:hover {
+  color: #57b95a;
+}
+.card {
+  background: #1a1a1a;
+  padding: 15px;
+  margin: 15px 0;
+  border-radius: 8px;
+}
+.note {
+  color: #57b95a;
+}
+button {
+  background: #57b95a;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  color: #000;
+  margin-top: 5px;
+}
+button:hover {
+  filter: brightness(0.9);
+}
+input {
+  width: 100%;
+  padding: 5px;
+  margin: 4px 0;
+}
