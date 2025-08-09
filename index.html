@@ -1,71 +1,227 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EcoPav - Pisos que Geram Energia</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>EcoPav — Pisos que Geram Energia</title>
+  <meta name="description" content="EcoPav - piso piezoelétrico que transforma passos em energia limpa. Projetos, planejamento e simulação financeira." />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <a class="skip" href="#main">Pular para o conteúdo</a>
 
-    <header>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <div class="brand">
+        <!-- Se tiver logo, coloque aqui: <img src="logo.png" alt="EcoPav" class="logo"> -->
         <h1>EcoPav</h1>
-        <p>Pisos inteligentes que transformam passos em energia</p>
-    </header>
+        <p class="tag">Energia aos seus pés — pisos que geram eletricidade</p>
+      </div>
 
-    <section class="intro">
-        <img src="imagens/piso1.jpg" alt="Piso gerador de energia">
-        <div>
-            <h2>O que é o EcoPav?</h2>
-            <p>O <strong>EcoPav</strong> é um piso inteligente que converte a energia dos passos das pessoas em eletricidade limpa e renovável. Ideal para shoppings, estádios, escolas, praças e qualquer lugar com grande fluxo de pessoas.</p>
+      <button id="navToggle" aria-label="Abrir menu" class="nav-toggle">☰</button>
+
+      <nav id="siteNav" class="site-nav" aria-label="Menu principal">
+        <a href="#sobre">Sobre</a>
+        <a href="#como-funciona">Como funciona</a>
+        <a href="#planejamento">Planejamento</a>
+        <a href="#simulacao">Simulação</a>
+        <a href="#galeria">Galeria</a>
+        <a href="#reflexao">Reflexão</a>
+        <a href="#contato" class="cta-link">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="wrap hero-inner">
+        <div class="hero-text">
+          <h2>Transforme passos em energia limpa</h2>
+          <p>EcoPav é um piso piezoelétrico modular que gera eletricidade a cada passo — ideal para shoppings, praças, escolas e estações.</p>
+          <div class="hero-cta">
+            <a href="#simulacao" class="btn primary">Calcular lucro</a>
+            <a href="#galeria" class="btn ghost">Ver galeria</a>
+          </div>
         </div>
+
+        <div class="hero-media">
+          <!-- imagem principal -->
+          <img src="piso1.jpg" alt="Piso gerador de energia EcoPav" class="hero-img">
+        </div>
+      </div>
     </section>
 
-    <section class="como-funciona">
-        <h2>Como Funciona</h2>
-        <p>Ao pisar sobre o EcoPav, a pressão mecânica é convertida em energia elétrica através de um sistema piezoelétrico de alta eficiência. Essa energia pode ser usada para iluminação, carregamento de dispositivos e muito mais.</p>
-        <img src="imagens/piso2.jpg" alt="Demonstração do piso">
+    <!-- SOBRE / IDENTIDADE -->
+    <section id="sobre" class="section wrap card">
+      <h3>1. Nome e descrição do negócio</h3>
+      <h4>EcoPav — Energia aos seus pés</h4>
+      <p><strong>O que é:</strong> Piso modular piezoelétrico que converte a pressão das pisadas em energia elétrica utilizável.</p>
+
+      <div class="grid-2">
+        <div>
+          <h5>O que oferece de diferente</h5>
+          <ul>
+            <li>Converte tráfego de pessoas em eletricidade local.</li>
+            <li>Design modular e de baixa manutenção.</li>
+            <li>Instalação rápida em áreas de alto fluxo.</li>
+          </ul>
+        </div>
+
+        <div>
+          <h5>Problema que resolve</h5>
+          <p>Aproveita energia desperdiçada no deslocamento humano, reduzindo custos com iluminação e totens em áreas públicas.</p>
+          <h5>Público-alvo</h5>
+          <p>Prefeituras, shoppings, escolas, estádios, empresas e organizadores de eventos.</p>
+        </div>
+      </div>
     </section>
 
-    <section class="aplicacoes">
-        <h2>Aplicações</h2>
-        <ul>
-            <li>Shoppings e centros comerciais</li>
-            <li>Áreas públicas e praças</li>
-            <li>Escolas e universidades</li>
-            <li>Eventos e shows</li>
-            <li>Transporte público</li>
-        </ul>
-        <img src="imagens/piso3.jpg" alt="Piso instalado em shopping">
+    <!-- COMO FUNCIONA -->
+    <section id="como-funciona" class="section wrap">
+      <h3>2. Como funciona</h3>
+      <div class="flow">
+        <ol>
+          <li><strong>Painel piezoelétrico:</strong> cada módulo contém elementos piezo que geram corrente quando comprimidos.</li>
+          <li><strong>Conversão e armazenamento:</strong> a energia vai para um conversor/gerenciador que armazena em baterias ou alimenta diretamente LEDs e totens.</li>
+          <li><strong>Integração:</strong> o sistema tem saída para iluminação, pontos USB e integração com sistema de monitoramento.</li>
+        </ol>
+        <img src="piso2.jpg" alt="Close de um pé no piso gerador">
+      </div>
     </section>
 
-    <section class="vantagens">
-        <h2>Vantagens</h2>
-        <ul>
-            <li>Energia limpa e renovável</li>
-            <li>Design moderno e resistente</li>
-            <li>Fácil instalação</li>
-            <li>Baixa manutenção</li>
-            <li>Inovação que atrai atenção</li>
-        </ul>
+    <!-- PLANEJAMENTO FINANCEIRO -->
+    <section id="planejamento" class="section wrap card">
+      <h3>3. Planejamento financeiro inicial</h3>
+      <p>Abaixo estão os gastos estimados para iniciar um projeto piloto:</p>
+
+      <table class="costs">
+        <thead><tr><th>Descrição</th><th>Valor (R$)</th></tr></thead>
+        <tbody>
+          <tr><td>Componentes e materiais</td><td>20.000</td></tr>
+          <tr><td>Desenvolvimento e montagem</td><td>15.000</td></tr>
+          <tr><td>Testes e certificações</td><td>5.000</td></tr>
+          <tr><td>Divulgação e apresentações</td><td>3.000</td></tr>
+          <tr><td>Ferramentas e equipamentos</td><td>2.000</td></tr>
+          <tr class="total"><td>Investimento inicial estimado</td><td>45.000</td></tr>
+        </tbody>
+      </table>
+
+      <div class="plan-notes">
+        <p><strong>Observação:</strong> esses valores são estimativas iniciais para um piloto. Para projetos maiores (praças, estádios) os custos unitários e logística mudam.</p>
+      </div>
     </section>
 
-    <section class="depoimentos">
-        <h2>O que dizem nossos clientes</h2>
-        <blockquote>"O EcoPav reduziu nossa conta de energia em 20% e chamou atenção dos clientes." – Shopping Cidade Verde</blockquote>
-        <blockquote>"Instalamos na escola e os alunos adoram ver a energia sendo gerada com seus passos!" – Colégio Futuro</blockquote>
+    <!-- SIMULAÇÃO -->
+    <section id="simulacao" class="section wrap">
+      <h3>4. Simulação de vendas e lucros</h3>
+
+      <div class="sim-grid">
+        <div class="sim-card">
+          <label>M² vendidos por mês:
+            <input id="m2" type="number" min="0" value="30">
+          </label>
+
+          <label>Preço por m² (R$):
+            <input id="preco" type="number" min="0" value="2500">
+          </label>
+
+          <label>Custo por m² (R$):
+            <input id="custo" type="number" min="0" value="1500">
+          </label>
+
+          <label>Investimento inicial (R$):
+            <input id="invest" type="number" min="0" value="45000">
+          </label>
+
+          <button id="calcBtn" class="btn primary" onclick="calcularLucro()">Calcular lucro</button>
+
+          <div id="resultado" class="resultado" aria-live="polite"></div>
+        </div>
+
+        <div class="sim-info">
+          <h4>Como interpretar</h4>
+          <p>O lucro mensal mostrado considera (Preço - Custo) × m² vendidos. O retorno em meses é Investimento ÷ Lucro mensal.</p>
+          <ul>
+            <li>Use valores conservadores para estimativas reais.</li>
+            <li>Considere custos de transporte e instalação em grandes projetos.</li>
+          </ul>
+        </div>
+      </div>
     </section>
 
-    <section class="contato">
-        <h2>Fale Conosco</h2>
-        <p>Quer saber mais ou pedir um orçamento? Clique no botão abaixo!</p>
-        <button id="botaoContato">Entrar em Contato</button>
+    <!-- BENEFÍCIOS -->
+    <section id="beneficios" class="section wrap card">
+      <h3>5. Benefícios & identidade visual</h3>
+      <div class="grid-2">
+        <div>
+          <h4>Benefícios ambientais e econômicos</h4>
+          <ul>
+            <li>Redução de consumo da rede local</li>
+            <li>Conscientização e impacto social</li>
+            <li>Nova fonte de receita e atração de público</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Identidade visual (sugestão)</h4>
+          <p>Paleta: verde (sustentabilidade) + azul (tecnologia). Logotipo com pegada estilizada + raio ou onda de energia; tipografia limpa e legível.</p>
+        </div>
+      </div>
     </section>
 
-    <footer>
-        <p>EcoPav &copy; 2025 - Todos os direitos reservados</p>
-    </footer>
+    <!-- GALERIA -->
+    <section id="galeria" class="section wrap">
+      <h3>6. Galeria</h3>
+      <p>Toque/click nas imagens para ver em tela cheia.</p>
+      <div class="gallery">
+        <img src="piso1.jpg" alt="Piso iluminado" class="thumb" data-full="piso1.jpg">
+        <img src="piso2.jpg" alt="Close no piso piezo" class="thumb" data-full="piso2.jpg">
+        <img src="piso3.jpg" alt="Piso instalado em shopping" class="thumb" data-full="piso3.jpg">
+      </div>
+    </section>
 
-    <script src="script.js"></script>
+    <!-- IMPLEMENTAÇÃO / PASSOS -->
+    <section class="section wrap card">
+      <h3>7. Como implementar (passos práticos)</h3>
+      <ol>
+        <li>Planejamento e escolha da área piloto (escolher pontos de maior fluxo).</li>
+        <li>Prototipagem e testes (montar 1–5 m² para validar geração).</li>
+        <li>Certificações e segurança (normas locais).</li>
+        <li>Instalação completa e monitoramento remoto de produção.</li>
+        <li>Campanha de comunicação para gerar engajamento.</li>
+      </ol>
+    </section>
+
+    <!-- REFLEXÃO -->
+    <section id="reflexao" class="section wrap">
+      <h3>8. Reflexão final</h3>
+      <p>Ao desenvolver o EcoPav aprendemos que inovação útil precisa equilibrar custo, confiabilidade e impacto social. A tecnologia piezoelétrica oferece uma solução prática para transformar fluxo de pessoas em energia local — ótima para demonstrações e projetos-piloto. Abriríamos esse negócio na vida real se encontrássemos parceiros em prefeituras e grandes centros comerciais; o maior desafio é escalar a produção mantendo preço competitivo. No processo, o mais difícil foi estimar custos de instalação e manutenção em larga escala; o mais gratificante é ver como uma solução simples pode educar e economizar ao mesmo tempo.</p>
+    </section>
+
+    <!-- CONTATO -->
+    <section id="contato" class="section wrap contact-card">
+      <h3>Contato</h3>
+      <p>Quer levar EcoPav para sua cidade, escola ou evento? Entre em contato:</p>
+      <div class="contact-row">
+        <a class="btn primary" href="mailto:contato@ecopav.com">Enviar e-mail</a>
+        <a class="btn ghost" href="tel:+5511999999999">Ligar agora</a>
+      </div>
+      <p class="small">Você também pode pedir um orçamento detalhado pelo e-mail acima com informações de área (m²) e local.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>EcoPav © <span id="year"></span> — Todos os direitos reservados</p>
+    </div>
+  </footer>
+
+  <!-- LIGHTBOX -->
+  <div id="lightbox" class="lightbox" role="dialog" aria-hidden="true">
+    <button id="lbClose" class="lb-close" aria-label="Fechar">✕</button>
+    <img id="lbImage" src="" alt="">
+  </div>
+
+  <script src="script.js"></script>
 </body>
-</html>
+    </html>
