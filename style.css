@@ -1,0 +1,95 @@
+:root{
+  --green-700:#1b5e20;
+  --green-500:#4caf50;
+  --blue-500:#1976d2;
+  --bg:#f3faf3;
+  --card:#ffffff;
+  --muted:#666;
+  --radius:12px;
+  --wrap:1100px;
+}
+
+*{box-sizing:border-box}
+body{
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  margin:0;
+  background:linear-gradient(180deg,#eaf8ea 0%,var(--bg) 100%);
+  color:#222;
+  -webkit-font-smoothing:antialiased;
+}
+
+.wrap{max-width:var(--wrap);margin:0 auto;padding:18px;}
+
+.skip{position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden}
+
+.site-header{background:linear-gradient(90deg,var(--green-700),var(--green-500));color:#fff}
+.header-inner{display:flex;align-items:center;justify-content:space-between;padding:14px 18px}
+.brand h1{margin:0;font-size:1.6rem;letter-spacing:0.5px}
+.tag{margin:0;font-size:0.9rem;opacity:.95}
+
+.nav-toggle{display:none;background:transparent;border:0;color:#fff;font-size:1.5rem}
+.site-nav a{color:#fff;text-decoration:none;margin-left:18px;padding:8px 6px;border-radius:6px;transition:background .2s}
+.site-nav a:hover{background:rgba(255,255,255,0.08)}
+.cta-link{background:rgba(255,255,255,0.12);padding:6px 10px;border-radius:6px}
+
+.hero{padding:28px 0;background:linear-gradient(180deg,rgba(255,255,255,0.06),transparent)}
+.hero-inner{display:grid;grid-template-columns:1fr 420px;gap:28px;align-items:center}
+.hero-text h2{font-size:2rem;margin:0 0 10px;color:var(--green-700)}
+.hero-text p{margin:0 0 14px;color:var(--muted)}
+.hero-cta .btn{margin-right:8px}
+.hero-img{width:100%;border-radius:14px;box-shadow:0 10px 30px rgba(0,0,0,0.15)}
+
+.section{padding:26px 0}
+.card{background:var(--card);border-radius:var(--radius);box-shadow:0 6px 20px rgba(16,24,16,0.06);padding:18px;margin-bottom:20px}
+
+.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.grid-2 ul{margin:0;padding-left:18px}
+
+.flow{display:flex;gap:20px;align-items:center}
+.flow ol{margin:0;padding-left:18px}
+.flow img{width:420px;border-radius:10px}
+
+.costs{width:100%;border-collapse:collapse;margin-top:12px}
+.costs th, .costs td{padding:8px 12px;border-bottom:1px solid #eee}
+.costs .total td{font-weight:700;color:var(--green-700)}
+
+.plan-notes{font-size:0.9rem;color:var(--muted);margin-top:8px}
+
+.sim-grid{display:grid;grid-template-columns:360px 1fr;gap:20px;align-items:start}
+.sim-card{background:#fff;padding:18px;border-radius:12px;box-shadow:0 6px 20px rgba(0,0,0,0.05)}
+.sim-card label{display:block;margin-bottom:10px;font-size:0.95rem}
+.sim-card input{width:100%;padding:8px;border-radius:6px;border:1px solid #ddd}
+
+.resultado{margin-top:12px;padding:10px;border-radius:8px;background:#fff8e6;color:#4b3a00}
+
+.btn{display:inline-block;padding:10px 16px;border-radius:8px;text-decoration:none;cursor:pointer;border:0}
+.btn.primary{background:linear-gradient(90deg,var(--green-700),var(--green-500));color:#fff}
+.btn.ghost{background:transparent;border:1px solid rgba(0,0,0,0.06);color:#222}
+
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+.gallery .thumb{width:100%;height:180px;object-fit:cover;border-radius:10px;cursor:pointer;box-shadow:0 6px 16px rgba(0,0,0,0.12);transition:transform .2s}
+.gallery .thumb:hover{transform:scale(1.03)}
+
+.contact-card .contact-row{display:flex;gap:12px;align-items:center}
+
+.site-footer{background:linear-gradient(90deg,var(--green-700),#185c27);color:#fff;padding:18px;margin-top:26px;text-align:center}
+
+.small{font-size:0.9rem;color:#666}
+
+/* LIGHTBOX */
+.lightbox{position:fixed;inset:0;display:none;align-items:center;justify-content:center;background:rgba(0,0,0,0.75);z-index:2000}
+.lightbox img{max-width:95%;max-height:85%;border-radius:10px;box-shadow:0 10px 40px rgba(0,0,0,0.6)}
+.lb-close{position:fixed;top:20px;right:20px;background:#fff;border-radius:8px;padding:6px 10px;border:0;cursor:pointer}
+
+/* RESPONSIVO */
+@media(max-width:980px){
+  .hero-inner{grid-template-columns:1fr}
+  .hero-img{order:-1;margin-bottom:14px}
+  .grid-2{grid-template-columns:1fr}
+  .sim-grid{grid-template-columns:1fr}
+  .flow{flex-direction:column}
+  .header-inner{flex-direction:row}
+  .nav-toggle{display:block}
+  .site-nav{position:fixed;right:12px;top:64px;background:rgba(0,0,0,0.75);padding:10px;border-radius:10px;display:none}
+  .site-nav.show{display:block}
+           }
